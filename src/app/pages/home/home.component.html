@@ -1,0 +1,61 @@
+<div class="banner">
+<div class="content">
+    <h1 class="mb-3">Freesh Cooked Food <br/>At Your Door</h1>
+    <a routerLink="menu">ORDER NOW <i class="bi bi-box-arrow-in-right"></i> </a>
+</div>
+</div>
+
+<div class="container mt-5 mb-5">
+
+<h1 class ="text-center mb-4">How to get <span style="color: brown; font-style: italic;">fresh food</span></h1>
+<div class="row mt-3">
+    
+    <div class="col-lg-4">
+        <div class="stepBox" style="width: 300px; height: 300px; margin-left: 50px;">
+          <img src="https://tweakyourbiz.com/wp-content/uploads/2022/05/online-food-delivery-app-e1613443751739.jpg" alt="" style="max-width: 290px;">
+         <h1>1</h1>
+            <p>select food</p> 
+         </div>
+         </div>
+
+
+         <div class="col-lg-4">
+            <div class="stepBox" style="width: 300px; height: 300px; margin-left: 50px;">
+              <img src="https://miro.medium.com/v2/resize:fit:525/1*c9VJhvC-KhMt3MMX7WQ_wA.jpeg" alt="" style="max-width: 290px;">
+           
+        <h1>2</h1>
+        <p>fill the details</p>
+    </div>
+</div>
+
+
+<div class="col-lg-4">
+    <div class="stepBox" style="width: 300px; height: 300px; margin-left: 50px;">
+      <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/280263678/original/2e015df56aff3a13e85f5059377cd4b9178342d5/grocery-delivery-service-app-grocery-website-multi-restaurant-food-delivery-app.jpg" alt="" style="max-width: 290px;">
+      <h1>3</h1>
+      <p>Your order delivered in minutes</p>
+    </div>
+  </div>
+  
+  
+
+
+</div>
+
+</div>
+<div class="container mt-5 mb-5">
+<h1 class="text-center mb-4">Customes <span style="color: brown; font-style: italic;">Favourites Food</span></h1>
+    <div class="row">
+        <div class="col-lg-3" *ngFor="let fd of foodData;index as i">
+            <div class="foodbox" *ngIf="i<=3">
+                <img [src]="fd.foodImg" /> 
+                <h1>{{fd.foodName}}</h1>
+                <p>{{fd.foodPrice | currency: '$'}}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="menu" class="viewmorebtn">view more <i class="bi bi-box-arrow-in-right "></i></a>
+</div>
+
+
+

@@ -1,0 +1,117 @@
+.banner {
+    background-image: url('../aboute/womenfood.jpg');
+    background-size: cover;
+    background-position: center top;
+    height: 100vh; 
+    
+}
+.content
+
+{
+    top : 20%;
+    left: 10%;
+    position: absolute;
+}
+.banner h1
+{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    
+    
+}
+.content a 
+{
+    text-decoration: none;
+    background-color: white;
+    color:rgb(43, 136, 66);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.content a:hover{
+
+   background-color: #2ba554; 
+   color: white;
+}
+
+.stepBox
+{
+
+    background-color: black;
+    padding: 5px 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.stepBox h1{
+    font-size: 50px;
+    color: brown;
+    font-weight: bold;
+
+}
+
+.stepBox p
+{    
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+
+}
+
+.foodbox
+{
+    padding: 10px 5px;
+}
+.foodbox img
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.foodbox h1
+{
+ font-size: 18px;
+ margin-top: 20px;
+ font-weight: bold;
+
+
+
+
+}
+
+
+
+
+
+
+.viewmorebtn 
+{
+    text-decoration: non;
+    background-color:brown;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    
+}
+
+@media screen and (max-width:600px)
+{
+    .banner
+{
+
+  height: 700px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
